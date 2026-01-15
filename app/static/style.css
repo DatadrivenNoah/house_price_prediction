@@ -1,0 +1,53 @@
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.15);
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background: linear-gradient(90deg, #00f260, #0575e6);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.confidence {
+  margin-top: 20px;
+  height: 12px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, gold, lime);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  from { filter: brightness(1); }
+  to { filter: brightness(1.5); }
+}

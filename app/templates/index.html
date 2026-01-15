@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>House Price Predictor</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>🏡 House Price Predictor</h1>
+  <p>AI-powered real estate valuation</p>
+
+  <input type="number" id="GrLivArea" placeholder="Living Area (sqft)">
+  <input type="number" id="OverallQual" placeholder="Overall Quality (1–10)">
+  <input type="number" id="GarageCars" placeholder="Garage Cars">
+
+  <button onclick="autofill()">✨ Autofill Sample</button>
+  <button onclick="predict()">Predict Price</button>
+
+  <div id="result"></div>
+
+  <div class="confidence">
+    <div class="bar"></div>
+  </div>
+</div>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>
