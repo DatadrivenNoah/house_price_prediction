@@ -57,8 +57,6 @@ async def predict(data: dict):
 # -----------------------------
 # Run server when executing this file
 # -----------------------------
-if __name__ == "__main__":
-    import uvicorn
-    print("Starting FastAPI server...")
-    print("Open this link in your browser: http://127.0.0.1:8000")
-    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
+if name == "main":
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port, debug=False)
